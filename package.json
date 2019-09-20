@@ -1,0 +1,48 @@
+{
+  "name": "@tickid/react-native-accordion",
+  "version": "1.0.0",
+  "description": "A small library that uniquely handles simple accordion operations",
+  "main": "./src/index.js",
+  "keywords": [
+    "react native accordion",
+    "react native panel",
+    "accordion react native",
+    "react native collapsible"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mycvvn/react-native-accordion.git"
+  },
+  "author": "sondnpt00343",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mycvvn/react-native-accordion/issues"
+  },
+  "homepage": "https://github.com/mycvvn/react-native-accordion#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.56.0",
+    "husky": "^3.0.5",
+    "prettier": "^1.18.2",
+    "lint-staged": "^9.2.5"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-native-button": "^2.4.0",
+    "react-native-vector-icons": "^6.5.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json}": [
+      "prettier --single-quote es6 --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
